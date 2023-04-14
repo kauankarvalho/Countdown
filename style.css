@@ -7,3 +7,30 @@
 :root {
   font-size: 62.5%;
 }
+
+body {
+  height: 100vh;
+}
+
+.c-top-image {
+  background: url(assets/top-image.svg) no-repeat;
+  background-size: contain;
+  height: 21%;
+}
+
+.c-main {
+  display: flex;
+  justify-content: center;
+}
+
+.c-bottom-image {
+  background: url(assets/bottom-image.svg) no-repeat;
+  background-size: contain;
+
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  
+  width: 100%;
+  height: 35%;
+}

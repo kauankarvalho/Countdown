@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="./style.css" />
 
     <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
@@ -15,7 +19,39 @@
     <aside class="c-top-image"></aside>
 
     <main class="c-main">
-      <aside><img src="./assets/rocket.svg" alt="Desenho de um foguete" /></aside>
+      <section class="c-main__countdown">
+        <h1 class="u-typography-title">Ready to launch in...</h1>
+
+        <section class="c-main__time">
+          <div id="days" class="c-main__period">
+            <span class="u-typography-timetable">Dias</span>
+            <span class="u-typography-number">08</span>
+          </div>
+
+          <span class="u-typography-number">:</span>
+
+          <div id="hours" class="c-main__period">
+            <span class="u-typography-timetable">Horas</span>
+            <span class="u-typography-number">12</span>
+          </div>
+
+          <span class="u-typography-number">:</span>
+
+          <div id="minutes" class="c-main__period">
+            <span class="u-typography-timetable">Minutos</span>
+            <span class="u-typography-number">44</span>
+          </div>
+
+          <span class="u-typography-number">:</span>
+
+          <div id="seconds" class="c-main__period">
+            <span class="u-typography-timetable">Segundos</span>
+            <span class="u-typography-number">28</span>
+          </div>
+        </section>
+      </section>
+
+      <aside class="c-main__aside"><img src="./assets/rocket.svg" alt="Desenho de um foguete" /></aside>
     </main>
 
     <aside class="c-bottom-image"></aside>

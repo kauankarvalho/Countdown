@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -21,6 +23,31 @@ body {
 .c-main {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 8.2rem;
+}
+
+.c-main__countdown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+}
+
+.c-main__time {
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+
+.c-main__period {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.c-main__aside {
+  width: 60.7rem;
+  height: 43.5rem;
 }
 
 .c-bottom-image {
@@ -30,7 +57,31 @@ body {
   position: absolute;
   bottom: 0;
   z-index: -1;
-  
+
   width: 100%;
   height: 35%;
+}
+
+.u-typography-title {
+  color: #6c63ff;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 5.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+}
+
+.u-typography-timetable {
+  color: #c8c8c8;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+}
+
+.u-typography-number {
+  color: #4d4c59;
+  font-size: 7.2rem;
+  font-weight: 400;
+  line-height: 10.8rem;
 }

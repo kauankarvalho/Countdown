@@ -11,11 +11,13 @@
 }
 
 body {
-  height: 100vh;
+  height: 90vh;
 }
 
 .c-top-image {
   width: 100%;
+  position: absolute;
+  z-index: -1;
 }
 
 .c-main {
@@ -23,6 +25,8 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8.2rem;
+  height: 100%;
+  position: relative;
 }
 
 .c-main__countdown {
@@ -33,8 +37,8 @@ body {
 .c-main__time {
   margin: 1.9rem 0 4.6rem 0;
   display: flex;
+  justify-content: space-between;
   align-items: flex-end;
-  gap: 2rem;
 }
 
 .c-main__period {
@@ -43,9 +47,8 @@ body {
   text-align: center;
 }
 
-.c-main__aside {
+.c-main__aside img {
   width: 60.7rem;
-  height: 43.5rem;
 }
 
 .c-main__subscribe {
@@ -65,7 +68,7 @@ body {
 
   border: none;
   border-radius: 1rem;
-  width: 16rem;
+  width: max-content;
 }
 
 .c-bottom-image {
@@ -90,6 +93,7 @@ body {
   font-size: 1.4rem;
   font-weight: 300;
   line-height: 2.1rem;
+  text-align: center;
 }
 
 .u-typography-number {
@@ -105,4 +109,42 @@ body {
   font-weight: 400;
   line-height: 2.4rem;
   cursor: pointer;
+}
+
+@media (max-width: 1250px) {
+  :root {
+    font-size: 55%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .c-main {
+    padding: 0 2rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .c-main__countdown {
+    order: 1;
+  }
+
+  .c-main__time {
+    margin-bottom: 2.5rem;
+  }
+
+  .c-main__aside {
+    display: flex;
+    justify-content: center;
+  }
+
+  .c-main__aside img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 430px) {
+  .u-typography-number {
+    font-size: 6rem;
+    line-height: 9rem;
+  }
 }

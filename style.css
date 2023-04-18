@@ -91,6 +91,7 @@ body {
 
 .c-modal {
   background: white;
+  margin: 0 3rem;
   padding: 3rem;
   border-radius: 0.5rem;
   width: 62rem;
@@ -159,9 +160,7 @@ body {
 }
 
 .c-modal__button {
-  position: absolute;
-  right: 5.8rem;
-  bottom: 4.5rem;
+  margin-top: 1rem;
 }
 
 .u-button {

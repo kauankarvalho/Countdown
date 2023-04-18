@@ -34,6 +34,12 @@ body {
   flex-direction: column;
 }
 
+.c-main__title {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+}
+
 .c-main__time {
   margin: 1.9rem 0 4.6rem 0;
   display: flex;
@@ -62,8 +68,104 @@ body {
   font-weight: 400 !important;
 }
 
-.c-main__button {
-  padding: 1.3rem 3.2rem;
+.c-bottom-image {
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+}
+
+.c-modal__container {
+  background: rgb(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.c-modal {
+  background: white;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  width: 62rem;
+  height: 42rem;
+  position: relative;
+}
+
+.c-modal__exit {
+  color: #6c63ff;
+  font-size: 3rem;
+  font-weight: 700;
+
+  position: absolute;
+  top: 1.5rem;
+  right: 3rem;
+  cursor: pointer;
+
+  transition: all 0.2s;
+}
+
+.c-modal__exit:hover {
+  color: rgb(108, 99, 255, 0.7);
+}
+
+.c-modal__title {
+  margin-left: 1rem;
+}
+
+.c-modal__form {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 85%;
+}
+
+.c-modal__group {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.c-modal__input {
+  padding-left: 1.5rem;
+  border: 1px solid #c8c8c8;
+  border-radius: 0.5rem;
+  outline: none;
+  height: 4rem;
+
+  color: #4d4c59;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.c-modal__input:focus {
+  border: 2px solid #6c63ff;
+}
+
+.c-modal__input::placeholder {
+  color: #b0afaf;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+
+.c-modal__button {
+  position: absolute;
+  right: 5.8rem;
+  bottom: 4.5rem;
+}
+
+.u-button {
+  padding: 0.8rem 3.2rem;
   background: #6c63ff;
 
   border: none;
@@ -73,16 +175,13 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-.c-main__button:hover {
-  background: rgb(108, 99, 255, 0.9);
-  transform: scale(1.1);
+.u-button--large {
+  width: 16rem;
 }
 
-.c-bottom-image {
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-  width: 100%;
+.u-button:hover {
+  background: rgb(108, 99, 255, 0.9);
+  transform: scale(1.1);
 }
 
 .u-typography-title {
@@ -90,12 +189,9 @@ body {
   font-size: 3.6rem;
   font-weight: 700;
   line-height: 5.5rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.105em;
 }
 
-.u-typography-timetable {
+.u-typography-info {
   color: #c8c8c8;
   font-size: 1.4rem;
   font-weight: 300;
@@ -116,6 +212,12 @@ body {
   font-weight: 400;
   line-height: 2.4rem;
   cursor: pointer;
+}
+
+.u-typography-label {
+  color: #6c63ff;
+  font-size: 1.6rem;
+  font-weight: 500;
 }
 
 @media (max-width: 1250px) {

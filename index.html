@@ -9,7 +9,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="./style.css" />
 
@@ -24,39 +24,39 @@
 
     <main class="c-main">
       <section class="c-main__countdown">
-        <h1 class="u-typography-title">Ready to launch in...</h1>
+        <h1 class="c-main__title u-typography-title">Ready to launch in...</h1>
 
         <section class="c-main__time">
           <div id="days" class="c-main__period">
-            <span class="u-typography-timetable">Dias</span>
+            <span class="u-typography-info">Dias</span>
             <span class="u-typography-number js-days">08</span>
           </div>
 
           <span class="u-typography-number">:</span>
 
           <div id="hours" class="c-main__period">
-            <span class="u-typography-timetable">Horas</span>
+            <span class="u-typography-info">Horas</span>
             <span class="u-typography-number js-hours">12</span>
           </div>
 
           <span class="u-typography-number">:</span>
 
           <div id="minutes" class="c-main__period">
-            <span class="u-typography-timetable">Minutos</span>
+            <span class="u-typography-info">Minutos</span>
             <span class="u-typography-number js-minutes">44</span>
           </div>
 
           <span class="u-typography-number">:</span>
 
           <div id="seconds" class="c-main__period">
-            <span class="u-typography-timetable">Segundos</span>
+            <span class="u-typography-info">Segundos</span>
             <span class="u-typography-number js-seconds">28</span>
           </div>
         </section>
 
         <section class="c-main__subscribe">
-          <p class="u-typography-timetable">Inscreva-se para saber mais sobre o lançamento</p>
-          <button class="c-main__button u-typography-button">Inscreva-se</button>
+          <p class="u-typography-info">Inscreva-se para saber mais sobre o lançamento</p>
+          <button class="u-button u-typography-button">Inscreva-se</button>
         </section>
       </section>
 
@@ -68,5 +68,32 @@
     <aside>
       <img class="c-bottom-image" src="./assets/bottom-image.svg" alt="Barra inferior" />
     </aside>
+
+    <div id="modal" class="c-modal__container">
+      <section class="c-modal">
+        <span id="exit" class="c-modal__exit">&#215;</span>
+        <h1 class="c-modal__title u-typography-title">Cadastrar</h1>
+
+        <form action="" class="c-modal__form">
+          <div id="input-label" class="c-modal__group">
+            <label class="u-typography-label" for="name">Nome:</label>
+            <input id="name" class="c-modal__input" type="text" placeholder="Digite seu nome" />
+          </div>
+
+          <div id="input-label" class="c-modal__group">
+            <label class="u-typography-label" for="email">E-mail:</label>
+            <input id="email" class="c-modal__input" type="email" placeholder="Digite seu e-mail" />
+          </div>
+
+          <div id="input-label" class="c-modal__group">
+            <label class="u-typography-label" for="contact">Contato:</label>
+            <input id="contact" class="c-modal__input" type="text" placeholder="Digite seu número" />
+          </div>
+
+          <button class="c-modal__button u-button u-button--large u-typography-button">Enviar</button>
+        </form>
+      </section>
+      
+    </div>
   </body>
 </html>

@@ -98,7 +98,7 @@ body {
   position: relative;
 }
 
-.c-modal__exit {
+.c-modal__exit-button {
   color: #6c63ff;
   font-size: 3rem;
   font-weight: 700;
@@ -111,7 +111,7 @@ body {
   transition: all 0.2s;
 }
 
-.c-modal__exit:hover {
+.c-modal__exit-button:hover {
   color: rgb(108, 99, 255, 0.7);
 }
 
@@ -218,6 +218,10 @@ body {
   color: #6c63ff;
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+.is-hidden {
+  display: none;
 }
 
 @media (max-width: 1250px) {

@@ -36,4 +36,15 @@ function countdownTimer() {
   days.textContent = formattedDays
 }
 
+function openAndCloseModal() {
+  const modal = document.querySelector(".js-modal")
+  modal.classList.toggle("is-hidden")
+}
+
 setInterval(countdownTimer, 1000)
+
+const subscribeButton = document.querySelector(".js-subscribe-button")
+const modalExitButton = document.querySelector(".js-exit-button")
+
+subscribeButton.addEventListener("click", openAndCloseModal)
+modalExitButton.addEventListener("click", openAndCloseModal)

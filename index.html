@@ -72,50 +72,53 @@
     <div id="modal" class="c-modal__container is-hidden js-modal">
       <section class="c-modal">
         <span id="exit-button" class="c-modal__exit-button js-exit-button">&#215;</span>
-        <h1 class="c-modal__title u-typography-title">Cadastrar</h1>
 
-        <form action="" class="c-modal__form">
-          <div id="input-label" class="c-modal__group">
-            <label class="u-typography-label" for="name">Nome:</label>
-            <input
-              id="name"
-              class="c-modal__input"
-              type="text"
-              placeholder="Digite seu nome"
-              title="Não serão aceitos números ou símbolos."
-              pattern="[A-Za-z\s]+"
-              required
-            />
-          </div>
+        <fieldset class="c-modal__fieldset">
+          <legend class="c-modal__title u-typography-title">Cadastrar</legend>
 
-          <div id="input-label" class="c-modal__group">
-            <label class="u-typography-label" for="email">E-mail:</label>
-            <input
-              id="email"
-              class="c-modal__input"
-              type="email"
-              placeholder="Digite seu e-mail"
-              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
-              title="Apenas e-mails válidos serão aceitos."
-              required
-            />
-          </div>
+          <form action="" class="c-modal__form">
+            <div id="input-label" class="c-modal__group">
+              <label class="u-typography-label" for="name">Nome:</label>
+              <input
+                id="name"
+                class="c-modal__input"
+                type="text"
+                placeholder="Digite seu nome"
+                title="Não serão aceitos números ou símbolos."
+                pattern="[A-Za-z\s]+"
+                required
+              />
+            </div>
 
-          <div id="input-label" class="c-modal__group">
-            <label class="u-typography-label" for="contact">Contato:</label>
-            <input
-              id="contact"
-              class="c-modal__input"
-              type="tel"
-              placeholder="Digite seu número"
-              title="Apenas números serão aceitos."
-              pattern="[0-9]+"
-              required
-            />
-          </div>
+            <div id="input-label" class="c-modal__group">
+              <label class="u-typography-label" for="email">E-mail:</label>
+              <input
+                id="email"
+                class="c-modal__input"
+                type="email"
+                placeholder="Digite seu e-mail"
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                title="Apenas e-mails válidos serão aceitos."
+                required
+              />
+            </div>
 
-          <button class="c-modal__button u-button u-button--large u-typography-button">Enviar</button>
-        </form>
+            <div id="input-label" class="c-modal__group">
+              <label class="u-typography-label" for="contact">Contato:</label>
+              <input
+                id="contact"
+                class="c-modal__input"
+                type="tel"
+                placeholder="Digite seu número"
+                title="Apenas números serão aceitos."
+                pattern="[0-9]+"
+                required
+              />
+            </div>
+
+            <button class="c-modal__button u-button u-button--large u-typography-button">Enviar</button>
+          </form>
+        </fieldset>
       </section>
       
     </div>

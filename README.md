@@ -21,7 +21,7 @@
 <br />
 
 <div align="center">
-  <img alt="Desafio Countdown" src="./.github/preview.png" width="100%" />
+  <img alt="Desafio Countdown" src="./.github/thumbnail.png" width="100%" />
 </div>
 
 ## 🎨 Layout

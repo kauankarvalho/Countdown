@@ -39,7 +39,7 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 
 O projeto Countdown do Discover da Rocketseat consiste em criar uma página web que exibe um contador regressivo para uma data específica, utilizando HTML, CSS e JavaScript. O objetivo é criar uma interface interativa e atraente que apresente informações relevantes para os usuários, como a contagem regressiva para um evento importante, como uma festa de aniversário ou uma data comemorativa.
 
-## 💡 Tecnologias
+## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
